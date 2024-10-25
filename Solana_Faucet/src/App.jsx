@@ -1,6 +1,6 @@
 import "./App.scss";
 import React from "react";
-import Airdrop from "./Components/Airdrop";
+import Airdrop from "./Components/Airdrop/Airdrop";
 import {
   ConnectionProvider,
   WalletProvider,

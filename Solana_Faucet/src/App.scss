@@ -40,7 +40,6 @@
     align-items: center;
 
     .wallet-adapter-dropdown {
-      border: 1px solid wheat;
       > ul {
         display: none;
       }
@@ -93,6 +92,26 @@
           width: 2rem;
         }
       }
+    }
+  }
+}
+.wallet-adapter-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  .wallet-adapter-modal-title {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #ffd166;
+  }
+  .wallet-adapter-modal-button-close {
+    border: 1px solid red;
+
+    :hover {
+      color: #7ec8e3 !important;
+      cursor: pointer;
     }
   }
 }
