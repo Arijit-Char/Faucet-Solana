@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { Connection } from "@solana/web3.js";
-import { DEV_NET_RPC_URL, TEST_NET_RPC_URL } from "./Net";
+import { DEV_NET_RPC_URL, TEST_NET_RPC_URL } from "../Net";
 export default function Airdrop() {
   const [amount, setAmount] = useState(0);
   const [net, setNet] = useState("devnet");
