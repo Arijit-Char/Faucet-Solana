@@ -12,6 +12,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { MAIN_NET_RPC_URL } from "./Net";
+import Balance from "./Components/Balance/Balance";
 function App() {
   return (
     <Router>
@@ -23,8 +24,9 @@ function App() {
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
             <div className="header">
+            <h3>SOLConnect </h3>
+
               <div className="headerMenu">
-                <h3>SOLConnect </h3>
                <button><Link to="/">Home</Link></button> 
                 <button><Link to="/balance">Wallet balance</Link></button>
                 <button><Link to="/sendsol">Send Sol</Link></button>
@@ -38,6 +40,7 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Airdrop />} />
+              <Route path="/balance" element={<Balance />} />
             </Routes>
           </WalletModalProvider>
         </WalletProvider>

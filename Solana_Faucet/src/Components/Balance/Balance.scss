@@ -1,0 +1,51 @@
+$primary-bg-color: #1a1a1a;
+$secondary-bg-color: #333333;
+$text-color: #ffffff;
+$accent-color-1: #ff6b6b;
+$accent-color-2: #7ec8e3;
+$accent-color-3: #ffd166;
+
+.balance-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  color: $text-color;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+  .balance-btn {
+    background-color: $accent-color-3;
+    color: $primary-bg-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $accent-color-1;
+    }
+
+    &:active {
+      background-color: $accent-color-2;
+    }
+  }
+
+  .balance-details {
+    margin-top: 20px;
+    background-color: $secondary-bg-color;
+    padding: 15px;
+    border-radius: 8px;
+
+    h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+      font-weight: normal;
+      color: $accent-color-2;
+    }
+  }
+}
