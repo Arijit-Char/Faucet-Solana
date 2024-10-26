@@ -1,13 +1,5 @@
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
 .airdrop {
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     padding: 2rem;
     border-radius: 0.5rem;
     display: flex;
@@ -15,80 +7,77 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0.5rem;
+  
     .heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        h1 {
-            color: #FFD166;
-            font-size: 3.5rem;
-        }
-
-        h2 {
-            color: #7EC8E3;
-            font-size: 1.3rem;
-            font-weight: 300;
-            max-width: 100%;
-            text-align: center;
-        }
-
-        h4 {
-            color: red;
-            font-size: 1rem;
-            font-weight: 400;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      h1 {
+        color: #ffd166;
+        font-size: 3.5rem;
+      }
+      h2 {
+        color: #7ec8e3;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+      }
+      h4 {
+        color: red;
+        font-size: 1rem;
+        font-weight: 400;
+      }
     }
-
+  
     .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+  
+      form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-
-            input {
-                width: 4rem;
-                height: 2rem;
-                padding: 0.5rem;
-                border-radius: 0.5rem;
-                border: 1px solid #ffffff;
-                background-color: #333333;
-                color: #FFFFFF;
-                font-weight: 800;
-                text-align: center;
-                line-height: 1.5rem;
-                font-size: 1rem;
-            }
-
-            .buttons {
-                display: flex;
-                gap: 1rem;
-
-                button {
-                    padding: 0.7rem 1.2rem;
-                    border: none;
-                    border-radius: 0.5rem;
-                    background-color: #FF6B6B;
-                    color: #FFFFFF;
-                    font-weight: bold;
-                    cursor: pointer;
-
-                    &:hover {
-                        background-color: #FFD166;
-                        color: #1A1A1A;
-                    }
-                }
-            }
+        gap: 1rem;
+  
+        input {
+          width: 4rem;
+          height: 2rem;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          border: 1px solid #ffffff;
+          background-color: #333333;
+          color: #ffffff;
+          font-weight: 800;
+          text-align: center;
+          font-size: 1rem;
         }
+  
+        .buttons {
+          display: flex;
+          gap: 1rem;
+  
+          button {
+            padding: 0.7rem 1.2rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #ff6b6b;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: #ffd166;
+              color: #1a1a1a;
+            }
+          }
+        }
+      }
     }
-}
+  }

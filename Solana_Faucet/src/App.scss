@@ -4,6 +4,7 @@
   background-color: #1a1a1a;
   color: #ffffff;
 }
+
 .header {
   width: 95vw;
   height: 10dvh;
@@ -70,6 +71,7 @@
     }
   }
 }
+
 .wallet-adapter-modal-list {
   display: flex;
   align-items: center;
@@ -95,6 +97,7 @@
     }
   }
 }
+
 .wallet-adapter-modal-wrapper {
   display: flex;
   flex-direction: column;
@@ -114,8 +117,7 @@
       path {
         fill: #ffd166;
       }
-      }
-    
+    }
     :hover {
       cursor: pointer;
     }

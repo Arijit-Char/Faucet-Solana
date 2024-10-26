@@ -28,7 +28,7 @@ function App() {
             <div className="header">
 
               <div className="headerMenu">
-               <button><Link to="/">Home</Link></button> 
+               <button><Link to="/">Airdrop</Link></button> 
                 <button><Link to="/balance">Wallet balance</Link></button>
                 <button><Link to="/sendsol">Send Sol</Link></button>
                 <button><Link to="/signmessage">Sign Message</Link></button>
