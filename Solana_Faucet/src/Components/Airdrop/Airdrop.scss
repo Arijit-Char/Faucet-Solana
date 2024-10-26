@@ -16,29 +16,29 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
     gap: 2rem;
     color: #FFFFFF;
-
+    border: 1px solid #333333;
+    margin: 0.5rem;
     .heading {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-
         h1 {
             color: #FFD166;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
         }
 
         h2 {
             color: #7EC8E3;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 300;
-            max-width: 90%;
+            max-width: 100%;
             text-align: center;
         }
 
         h4 {
-            color: #FFFFFF;
+            color: red;
             font-size: 1rem;
             font-weight: 400;
         }

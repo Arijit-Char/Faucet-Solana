@@ -11,18 +11,20 @@ import {
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { MAIN_NET_RPC_URL } from "./Net";
 function App() {
   return (
     <Router>
       <ConnectionProvider
         endpoint={
-          "https://solana-mainnet.g.alchemy.com/v2/R9GU0hMRumdyZ1wQvpvDBXHBsGWzJM67"
+          MAIN_NET_RPC_URL
         }
       >
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
             <div className="header">
               <div className="headerMenu">
+                <h3>SOLConnect </h3>
                <button><Link to="/">Home</Link></button> 
                 <button><Link to="/balance">Wallet balance</Link></button>
                 <button><Link to="/sendsol">Send Sol</Link></button>
