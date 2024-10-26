@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { DEV_NET_RPC_URL, MAIN_NET_RPC_URL, TEST_NET_RPC_URL } from "../../Net";
-import { Connection } from "@solana/web3.js";
+import { Connection, LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useWallet } from "@solana/wallet-adapter-react";
 import "./Balance.scss";
 
 export default function Balance() {
-  const LAMPORTS_PER_SOL = 1000000000;
   const [mainNetBalance, setMainNetBalance] = useState(0);
   const [testNetBalance, setTestNetBalance] = useState(0);
   const [devNetBalance, setDevNetBalance] = useState(0);

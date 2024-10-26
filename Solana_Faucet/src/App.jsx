@@ -13,6 +13,7 @@ import {
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { MAIN_NET_RPC_URL } from "./Net";
 import Balance from "./Components/Balance/Balance";
+import SendSol from "./Components/SendSol/SendSol";
 function App() {
   return (
     <Router>
@@ -41,6 +42,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Airdrop />} />
               <Route path="/balance" element={<Balance />} />
+              <Route path="/sendsol" element={<SendSol />} />
             </Routes>
           </WalletModalProvider>
         </WalletProvider>

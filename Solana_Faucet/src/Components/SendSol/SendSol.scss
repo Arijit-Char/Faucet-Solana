@@ -1,0 +1,83 @@
+// Color and typography variables for a consistent design
+$background-color: #1f1f2e;
+$input-bg-color: #2b2b3c;
+$text-color: #eaeaea;
+$button-bg-color: #4caf50;
+$button-hover-bg: #388e3c;
+$border-radius: 6px;
+$font-size: 1rem;
+
+.SendSol {
+    margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $text-color;
+  padding: 20px;
+
+  .heading {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: lighten($button-bg-color, 20%);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .formComp {
+
+    background-color: darken($background-color, 5%);
+    padding: 30px;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input[type="text"],
+      input[type="number"] {
+        padding: 12px;
+        background-color: $input-bg-color;
+        color: $text-color;
+        font-size: $font-size;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: $border-radius;
+        transition: border-color 0.3s;
+
+        &:focus {
+          outline: none;
+          border-color: lighten($button-bg-color, 20%);
+        }
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      button[type="submit"] {
+        padding: 12px;
+        font-size: $font-size;
+        font-weight: bold;
+        color: #fff;
+        background-color: $button-bg-color;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $button-hover-bg;
+          transform: scale(1.02);
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}

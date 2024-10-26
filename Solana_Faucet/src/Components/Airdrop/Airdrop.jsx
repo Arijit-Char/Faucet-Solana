@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
-import { Connection } from "@solana/web3.js";
+import { Connection, LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { DEV_NET_RPC_URL, TEST_NET_RPC_URL } from "../../Net";
 import "./Airdrop.scss";
 
@@ -28,7 +28,6 @@ export default function Airdrop() {
     }
 
     try {
-      const LAMPORTS_PER_SOL = 1000000000;
       await connection.requestAirdrop(publicKey, parsedAmount * LAMPORTS_PER_SOL);
       alert(`Airdropped ${parsedAmount} SOL to ${publicKey.toBase58()}`);
     } catch (error) {
